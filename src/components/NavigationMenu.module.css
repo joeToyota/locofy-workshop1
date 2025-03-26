@@ -1,0 +1,12 @@
+.navigationMenu {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-21xl);
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--primary-backgroung-color);
+  font-family: var(--font-roboto);
+}

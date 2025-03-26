@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap");
+body {
+  margin: 0;
+  line-height: normal;
+}
+:root {
+  /* Fonts */
+  --font-roboto: Roboto;
+
+  /* font sizes */
+  --font-size-5xl: 1.5rem;
+
+  /* Colors */
+  --color-teal: #378372;
+
+  /* Gaps */
+  --gap-5xs: 0.5rem;
+  --gap-21xl: 2.5rem;
+
+  /* Paddings */
+  --padding-5xs: 0.5rem;
+  --padding-5xl: 1.5rem;
+
+  /* Border radiuses */
+  --br-mini: 15px;
+
+  /* Figma Variables */
+
+  /* Color Variables */
+  --primary-backgroung-color: #fff;
+}

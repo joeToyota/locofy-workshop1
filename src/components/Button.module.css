@@ -1,0 +1,23 @@
+.icon {
+  height: 1.875rem;
+  width: 2rem;
+  position: relative;
+}
+.xxxxx {
+  position: relative;
+  font-weight: 500;
+}
+.button {
+  border-radius: var(--br-mini) var(--br-mini) 0px 0px;
+  background-color: var(--color-teal);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-5xs) var(--padding-5xl);
+  gap: var(--gap-5xs);
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--primary-backgroung-color);
+  font-family: var(--font-roboto);
+}
