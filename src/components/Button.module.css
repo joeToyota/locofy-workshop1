@@ -5,19 +5,24 @@
 }
 .xxxxx {
   position: relative;
+  font-size: var(--font-size-5xl);
   font-weight: 500;
+  font-family: var(--font-roboto);
+  color: var(--primary-backgroung-color);
+  text-align: left;
 }
 .button {
-  border-radius: var(--br-mini) var(--br-mini) 0px 0px;
+  cursor: pointer;
+  border: none;
+  padding: var(--padding-5xs) var(--padding-5xl);
   background-color: var(--color-teal);
+  border-radius: var(--br-mini) var(--br-mini) 0px 0px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  padding: var(--padding-5xs) var(--padding-5xl);
   gap: var(--gap-5xs);
-  text-align: left;
-  font-size: var(--font-size-5xl);
-  color: var(--primary-backgroung-color);
-  font-family: var(--font-roboto);
+}
+.button:hover {
+  background-color: var(--color-mediumaquamarine);
 }
