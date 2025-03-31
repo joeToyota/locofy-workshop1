@@ -1,15 +1,26 @@
-import { useMemo } from "react";
-import PropTypes from "prop-types";
+import { FunctionComponent, useMemo, type CSSProperties } from "react";
 import styles from "./Button.module.css";
 
-const Button = ({
+export type ButtonType = {
+  className?: string;
+  icon?: string;
+  xXXXX?: string;
+
+  /** Variant props */
+  type?: string;
+
+  /** Style props */
+  buttonBorder?: CSSProperties["border"];
+};
+
+const Button: FunctionComponent<ButtonType> = ({
   className = "",
   type = "unselected",
   buttonBorder,
   icon,
   xXXXX,
 }) => {
-  const buttonStyle = useMemo(() => {
+  const buttonStyle: CSSProperties = useMemo(() => {
     return {
       border: buttonBorder,
     };
@@ -25,18 +36,6 @@ const Button = ({
       <div className={styles.xxxxx}>{xXXXX}</div>
     </button>
   );
-};
-
-Button.propTypes = {
-  className: PropTypes.string,
-  icon: PropTypes.string,
-  xXXXX: PropTypes.string,
-
-  /** Variant props */
-  type: PropTypes.number,
-
-  /** Style props */
-  buttonBorder: PropTypes.string,
 };
 
 export default Button;

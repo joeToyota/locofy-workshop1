@@ -1,12 +1,17 @@
+import { FunctionComponent } from "react";
 import Button from "./Button";
-import PropTypes from "prop-types";
 import styles from "./NavigationMenu.module.css";
-import alertHellowWorld from "../libs/alertHellowWorld";
 
-const NavigationMenu = ({ className = "" }) => {
+export type NavigationMenuType = {
+  className?: string;
+};
+
+const NavigationMenu: FunctionComponent<NavigationMenuType> = ({
+  className = "",
+}) => {
   return (
     <header className={[styles.navigationMenu, className].join(" ")}>
-      <Button onClick={()=>{alertHellowWorld()}} className="hover:bg-red-500" type="unselected" icon="/icon.svg" xXXXX="Button1" />
+      <Button type="unselected" icon="/icon.svg" xXXXX="Button1" />
       <Button
         type="unselected"
         buttonBorder="none"
@@ -27,10 +32,6 @@ const NavigationMenu = ({ className = "" }) => {
       />
     </header>
   );
-};
-
-NavigationMenu.propTypes = {
-  className: PropTypes.string,
 };
 
 export default NavigationMenu;
