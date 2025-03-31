@@ -1,10 +1,19 @@
+.mainContentChild {
+  width: 529px;
+  height: 425px;
+  position: relative;
+  background-color: #a1e18f;
+  overflow: hidden;
+  flex-shrink: 0;
+}
 .mainContent {
-  height: 45.5rem;
+  height: 728px;
   flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: flex-start;
+  gap: 136px;
   max-width: 100%;
 }
 .internalWorkshop {
@@ -16,8 +25,14 @@
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: 1.25rem;
+  padding: 20px;
   box-sizing: border-box;
   line-height: normal;
   letter-spacing: normal;
+}
+
+@media screen and (max-width: 1200px) {
+  .mainContent {
+    gap: 68px;
+  }
 }

@@ -8,19 +8,19 @@ body {
   --font-roboto: Roboto;
 
   /* font sizes */
-  --font-size-5xl: 1.5rem;
+  --font-size-5xl: 24px;
 
   /* Colors */
   --color-mediumaquamarine: #4ed3b6;
   --color-teal: #378372;
 
   /* Gaps */
-  --gap-5xs: 0.5rem;
-  --gap-21xl: 2.5rem;
+  --gap-5xs: 8px;
+  --gap-21xl: 40px;
 
   /* Paddings */
-  --padding-5xs: 0.5rem;
-  --padding-5xl: 1.5rem;
+  --padding-5xs: 8px;
+  --padding-5xl: 24px;
 
   /* Border radiuses */
   --br-mini: 15px;
