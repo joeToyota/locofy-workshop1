@@ -1,11 +1,12 @@
 import Button from "./Button";
 import PropTypes from "prop-types";
 import styles from "./NavigationMenu.module.css";
+import alertHellowWorld from "../libs/alertHellowWorld";
 
 const NavigationMenu = ({ className = "" }) => {
   return (
     <header className={[styles.navigationMenu, className].join(" ")}>
-      <Button type="unselected" icon="/icon.svg" xXXXX="Button1" />
+      <Button onClick={()=>{alertHellowWorld()}} className="hover:bg-red-500" type="unselected" icon="/icon.svg" xXXXX="Button1" />
       <Button
         type="unselected"
         buttonBorder="none"
